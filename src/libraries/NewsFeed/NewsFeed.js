@@ -1,5 +1,5 @@
 const NewsFeed = () => {
-        return 'sss'
+        return 'жопа'
 
 }
 export default NewsFeed;
