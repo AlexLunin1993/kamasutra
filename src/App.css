@@ -1,0 +1,28 @@
+.AppWrapper {
+  display:grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas: 'Header Header'
+                       'NavBar Content';                     
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+.Header {
+  grid-area: Header;
+  position: fixed;
+}
+
+.NavBar {
+  grid-area: NavBar;
+  background-color :blanchedalmond;
+   }
+
+.Content {
+  grid-area: Content;
+  background-color: azure;
+  margin: 10px 50px;
+  position: relative;
+}

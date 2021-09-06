@@ -1,0 +1,15 @@
+.Links {
+    padding: 20px;    
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+.Links a{
+    color: darkred;
+    text-decoration: none;
+}
+
+.Links a.active {
+    background-color: black;
+    font-weight: bold;
+}

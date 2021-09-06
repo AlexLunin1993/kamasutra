@@ -1,0 +1,13 @@
+.Posts img {
+    width: 30px;
+    height: 30px;
+border-radius: 50px;
+}
+
+.Posts p {
+    text-align: left;
+    font-size: x-small;
+    padding: 0 15%;    
+}
+
+    

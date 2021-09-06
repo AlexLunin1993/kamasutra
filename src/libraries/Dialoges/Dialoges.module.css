@@ -1,0 +1,19 @@
+.Dialoges {
+    display: grid;
+    grid-template-areas: 'Names Messages';
+    grid-template-columns: 1fr 3fr;
+}
+
+.Names {
+    grid-area: Names;
+}
+
+.Messages {
+    grid-area: Messages;
+    background-color: blue;
+}
+
+.text {
+    font-size: larger;
+    padding-top: 30px;
+}
