@@ -1,0 +1,18 @@
+.Avatars {
+    display: grid;
+    grid-template-areas: 'avs';
+    grid-template-columns: 1px;
+}
+
+.avs{
+    grid-area: avs;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+}
+
+.li {
+    list-style: none;
+}

@@ -10,7 +10,10 @@ import Profile from './libraries/Profile/Profile';
 const App = (props) => {
   return (
     <div className='AppWrapper'>
-      <div className='Header'><Header /></div>
+      {/* <div className='Header'><Header /></div> */}
+      <div className='Header'>
+        <Route path='/' render={() => <Header />} />
+      </div>
       <div className='NavBar'><NavBar /></div>
       <div className='Content'>
         <Route path='/profile' render={() => <Profile />} />

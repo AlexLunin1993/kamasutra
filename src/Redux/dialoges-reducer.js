@@ -36,7 +36,7 @@ const dialogesReducer = (state = initialState, action) => {
         }
         return {
           ...state,
-          // newMessageText : '',
+          newMessageText : '',
           messagesData: [...state.messagesData, newMessage],
         };
       };
