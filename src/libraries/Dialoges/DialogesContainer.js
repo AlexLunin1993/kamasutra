@@ -5,17 +5,16 @@ import Dialoges from './Dialoges';
 
 
 let mapStateToProps = (state) => {
-    return{
-       dialogesPage: state.dialogesPage
+    return {
+        dialogesPage: state.dialogesPage
     }
 };
 
 let mapDispatchToProps = (dispatch) => {
-    return{
+    return {
         onChangeNewMessageText: (newtext) => {
-            // let action = updateNewMessageTextActionCreator(newtext);
-            dispatch (updateNewMessageTextActionCreator(newtext))
-        } ,
+            dispatch(updateNewMessageTextActionCreator(newtext.target.value))
+        },
         onNewMessage: () => {
             dispatch(addNewMessageActionCreator())
         }
@@ -23,6 +22,6 @@ let mapDispatchToProps = (dispatch) => {
 };
 
 
-const DialogesContainer = connect (mapStateToProps, mapDispatchToProps) (Dialoges);
+const DialogesContainer = connect(mapStateToProps, mapDispatchToProps)(Dialoges);
 
 export default DialogesContainer;

@@ -4,7 +4,7 @@ import Names from './Names';
 import Messages from './Messages';
 
 const Dialoges = (props) => {
-    debugger;
+    
     let dialogesElements = props.dialogesPage.dialogesData.map(dialog => <Names name={dialog.name} id={dialog.id} />);
     let messagesElements = props.dialogesPage.messagesData.map(messages => <Messages message={messages.message} />);
 
