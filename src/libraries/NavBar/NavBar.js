@@ -7,7 +7,9 @@ const NavBar = () => {
             <NavBarLinks link='/profile' linkname='Моя страница' />
             <NavBarLinks link='/dialoges' linkname='Мои сообщения' />
             <NavBarLinks link='/newsfeed' linkname='Новости' />
-            <NavBarLinks link='/settings' linkname='Настройки' />            
+            <NavBarLinks link='/settings' linkname='Настройки' /> 
+            <p>служебные</p>      
+            <NavBarLinks link='/users' linkname='юзеры' />        
         </div>
     );
 

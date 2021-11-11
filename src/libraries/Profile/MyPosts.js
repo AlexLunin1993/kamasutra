@@ -8,7 +8,7 @@ const MyPosts = (props) => {
 
         <div>
 
-            <textarea onChange={props.onPostChange}
+            <textarea onChange={props.updateNewPostText}
                       value={newtext}
             />
             <button onClick={props.addPost}>Отправить</button>

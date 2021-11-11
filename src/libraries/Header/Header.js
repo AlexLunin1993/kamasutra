@@ -1,15 +1,15 @@
-import { Route } from 'react-router';
 import s from './Header.module.css';
-import NavBarLinks from '../NavBar/NavBarLinks';
-import App from '../../App'
+import { NavLink } from 'react-router-dom';
 
-const Header = () => {
-    let a = <img src='https://i059.radikal.ru/1002/6c/8fe903fbb652.jpg' alt='котейка' />;
+const Header = (props) => {
+   debugger
     return (
-        <div className={s.image}>
-            <NavBarLinks link='/' linkname={a} />
-
+        <div className={s.loginBlock}>
+            {props.isAuth 
+            ? props.login
+            :<NavLink to={'/login'}>Login</NavLink>}
         </div>
+
     );
 }
 

@@ -34,10 +34,12 @@ const dialogesReducer = (state = initialState, action) => {
           id: 4,
           message: state.newMessageText,
         }
-        return {
-          ...state,
-          newMessageText : '',
-          messagesData: [...state.messagesData, newMessage],
+        if (state.newMessageText == '') { alert('сообщение пустое!!!') } else {
+          return {
+            ...state,
+            messagesData: [...state.messagesData, newMessage],
+            newMessageText: ''
+          }
         };
       };
     default: return state;

@@ -5,7 +5,7 @@ const Posts = (props) => {
     return (
         <div className={s.Posts}>
 
-            <Avatar /> {props.post}
+            {props.post}
             <p>Likes : {props.likesCount}</p>
         </div>
     );

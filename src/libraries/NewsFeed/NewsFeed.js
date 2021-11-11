@@ -5,6 +5,7 @@ const NewsFeed = () => {
         //         <div>ss</div>
         //  );
 
+       
 return (
         <div className ={s.Avatars}>
                 <ul>
