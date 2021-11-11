@@ -10,6 +10,7 @@ class UsersAPI extends React.Component {
         
         this.props.getUsers(this.props.currentPage, this.props.pageSize);
     }
+
     onPageChanged = (currentPage) => {
         this.props.setCurrentPage(currentPage);
         this.props.getUsers(this.props.currentPage, this.props.pageSize);
@@ -34,6 +35,7 @@ class UsersAPI extends React.Component {
                 toggleFollowing={this.props.toggleFollowing}
                 followUser={this.props.followUser}
                 unFollowUser={this.props.unFollowUser}
+                onPageChanged={this.onPageChanged}
             />
         </>
     }

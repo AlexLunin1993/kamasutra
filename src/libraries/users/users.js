@@ -24,7 +24,7 @@ const Users = (props) => {
         <div>
             <div>
                 {pages.map(p => {
-
+                    debugger
                     return (
                         <button onClick={(_e) => { props.onPageChanged(p); }}
                             className={props.currentPage === p && s.selectedPage}>
