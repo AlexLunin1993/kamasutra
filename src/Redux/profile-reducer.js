@@ -7,11 +7,7 @@ const SET_USER_PROFILE = 'SET_USER_PROFILE';
 let initialState = {
   newPostText: '',
   postsData: [
-    { id: 1, post: 'Нассал в рабочие туфли, вот крику-то будет утром', likesCount: '2' },
-    { id: 2, post: 'Обиделся', likesCount: '3' },
-    { id: 3, post: 'Разбудил хозяйку, получил тапком по жопе', likesCount: '2' },
-    { id: 4, post: 'Пойду мяучить', likesCount: '10' },
-    { id: 5, post: 'Скучно', likesCount: '2' },
+    { id: 1, post: 'пост', likesCount: '2' },
   ],
   profile: null
 

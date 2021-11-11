@@ -7,16 +7,12 @@ const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
 let initialState = {
   newMessageText: '',
   dialogesData: [
-    { id: 1, name: 'Рыжий' },
-    { id: 2, name: 'Васька' },
-    { id: 3, name: 'Крысолов_3000' },
-    { id: 4, name: 'Барсик' },
+    { id: 1, name: 'Имя1 ' },
+
   ],
 
   messagesData: [
-    { id: 1, message: 'мяу-мяу' },
-    { id: 2, message: 'мяу-мяу-мяу' },
-    { id: 3, message: 'Сегодня троих поймал! Здоровенных!!!!!' },
+    { id: 1, message: 'пост 1' },
   ]
 };
 
